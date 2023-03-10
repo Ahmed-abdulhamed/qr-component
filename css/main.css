@@ -1,0 +1,68 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Outfit', sans-serif;
+}
+.qr {
+    height: 100vh;
+    position: relative;
+    background-color: hsl(212, 45%, 89%);
+}
+.qr .card {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0 12px 20px 0px rgb(0 0 0 / 13%), 0 2px 4px 0px rgb(0 0 0 / 12%);
+    border-radius: 15px;
+}
+.qr .card .image {
+    width: 250px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.qr .card .image img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+.qr .card .text {
+    max-width: 250px;
+    text-align: center;
+}
+.qr .card .text h2 {
+    width: 100%;
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+.qr .card .text p {
+    width: 100%;
+    font-size: 15px;
+    color: #777;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.qr .attribution {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 14px;
+    /* white-space: nowrap; */
+    width: 100%;
+    /* max-width: 100%; */
+    text-align: center;
+}
+@media (max-width: 991px) {
+    .qr .attribution {
+        text-align: center;
+    }
+}
